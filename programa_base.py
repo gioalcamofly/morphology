@@ -4,6 +4,8 @@
 
 import sys
 from collections import Counter
+
+
 import nltk
 from nltk.tokenize import word_tokenize
 from nltk.probability import FreqDist
@@ -18,12 +20,11 @@ words=nltk.word_tokenize(f.read())
 fd = nltk.FreqDist(word.lower() for word in words)
 fdf= fd.most_common(50)
 
-print 'Palabras del texto ordenadas por frecuencia'
+print('Palabras del texto ordenadas por frecuencia')
 t=''
 for w in fdf:
     t+='('+w[0]+','+str(w[1])+') '
-print t
-
+print(t)
 
 dict ={}
 dict['.']='PUNT'
@@ -52,10 +53,8 @@ rt=nltk.RegexpTagger(p)
 taggedText=rt.tag(words)
 for item in taggedText:
     if dict.has_key(item[0]):
-        print item[0]+' '+dict[item[0]]
+        print(item[0] + ' ' + dict[item[0]])
     else:
-        print item[0]+' '+item[1]
-    
-
+        print(item[0] + ' ' + item[1])
 
 sys.exit()
