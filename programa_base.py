@@ -7,6 +7,7 @@ from collections import Counter
 
 
 import nltk
+import re
 from nltk.tokenize import word_tokenize
 from nltk.probability import FreqDist
 
@@ -28,7 +29,10 @@ print(t)
 
 dict ={}
 dict['.']='PUNT'
+dict['lo']='DET'
 dict['la']='DET'
+dict['los']='DET'
+dict['las']='DET'
 dict['a']='PREP'
 dict['para']='PREP'
 dict['que']='CONJ'
@@ -42,6 +46,9 @@ dict['el']='DET'
 p=[
     (r'.*amos$','VIP1S'),
     (r'.*imos$','VIP1S'),
+    (r'.*(ar|er|ir)$', 'VERBO'),
+    (r'.*as$', 'NCFP'),
+    (r'.*os$', 'NCMP'),
     (r'.*a$','NCFS'),
     (r'.*$','NCMS'),
     #Aquí hay se añaden los patrones necesarios
@@ -52,8 +59,8 @@ p=[
 rt=nltk.RegexpTagger(p)
 taggedText=rt.tag(words)
 for item in taggedText:
-    if dict.has_key(item[0]):
-        print(item[0] + ' ' + dict[item[0]])
+    if dict.has_key(item[0].lower()):
+        print(item[0] + ' ' + dict[item[0].lower()])
     else:
         print(item[0] + ' ' + item[1])
 
