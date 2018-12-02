@@ -38,15 +38,26 @@ dict['para']='PREP'
 dict['que']='CONJ'
 dict['en']='PREP'
 dict['el']='DET'
+dict['de']='PREP'
+dict[',']='PUNT'
+dict['(']='PUNT'
+dict[')']='PUNT'
+dict['un']='DET'
+dict['una']='DET'
+dict['unos']='DET'
+dict['unas']='DET'
+
 #Aquí hay se añaden las palabras del diccionario y sus etiquetas
 
 
 
 
 p=[
+    (r'.$ware$','NCMS'),
     (r'.*amos$','VIP1S'),
     (r'.*imos$','VIP1S'),
-    (r'.*(ar|er|ir)$', 'VERBO'),
+    (r'.*it[oa]$', 'ADJ'),
+    (r'.*(ar|er|ir)$', 'VN'),
     (r'.*as$', 'NCFP'),
     (r'.*os$', 'NCMP'),
     (r'.*a$','NCFS'),
@@ -63,5 +74,6 @@ for item in taggedText:
         print(item[0] + ' ' + dict[item[0].lower()])
     else:
         print(item[0] + ' ' + item[1])
+
 
 sys.exit()
