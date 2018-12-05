@@ -46,6 +46,7 @@ dict['un']='DET'
 dict['una']='DET'
 dict['unos']='DET'
 dict['unas']='DET'
+dict['con']='PREP'
 
 #Aquí hay se añaden las palabras del diccionario y sus etiquetas
 
@@ -56,6 +57,12 @@ p=[
     (r'.$ware$','NCMS'),
     (r'.*amos$','VIP1S'),
     (r'.*imos$','VIP1S'),
+    (r'.*(ados|idos)$', 'VMP00PM'), #en singular podría ser también un verbo
+    (r'.*(adas|idas)$', 'VMP00PF'),
+    (r'.*bles?$', 'ADJ'),
+    (r'.*(ado|ido)$', 'VMP00SM'),
+    (r'.*(ada|ida)$', 'VMP00SF'),
+    (r'.*ble$', 'ADJ'),
     (r'.*it[oa]$', 'ADJ'),
     (r'.*(ar|er|ir)$', 'VN'),
     (r'.*as$', 'NCFP'),

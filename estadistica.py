@@ -1,4 +1,4 @@
-from numpy import size
+
 
 from nltk.corpus import cess_esp as cess
 from nltk import UnigramTagger as ut
@@ -26,28 +26,25 @@ bi_tag.evaluate(cess_sents[train+1:])
 
 
 def word_features(word):
-    return {'last_letters': word[-2:]}
+    return {'last_letters': word[-4:]}
 
-labeled_names = []
+
 taggedText=bi_tag.tag(tagged_words)
-for item in taggedText:
-    if item[1] is None:
-        labeled_names.append({item[0],'NOMBRE'})
-    elif len(item[1]) > 2:
-        labeled_names.append({item[0],item[1]})
 
-import random
+labeled_names = ([word, tag] for word, tag in taggedText)
+
+#import random
 #random.shuffle(labeled_names)
 
 featuresets = [(word_features(n), tag) for (n, tag) in labeled_names]
-print featuresets
-train_set, test_set = featuresets[50:], featuresets[:50]
+
+for item in featuresets:
+    print (item)
+train_set, test_set = featuresets[250:], featuresets[:250]
 clasiffier = nltk.NaiveBayesClassifier.train(train_set)
 
-print(clasiffier.classify(word_features('ordenador')))
-print(clasiffier.classify(word_features('ejecutar')))
 
-print(clasiffier.show_most_informative_features(5))
+print(clasiffier.show_most_informative_features(10))
 
 
 sys.exit()
