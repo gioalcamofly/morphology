@@ -6,6 +6,10 @@ from nltk import BigramTagger as bt
 import nltk
 import sys
 
+
+def word_features(word):
+    return {'last_letters': word[-4:]}
+
 reload(sys)
 sys.setdefaultencoding('utf8')
 
@@ -25,16 +29,9 @@ bi_tag = bt(cess_sents[:train], backoff=uni_tag)
 bi_tag.evaluate(cess_sents[train+1:])
 
 
-def word_features(word):
-    return {'last_letters': word[-4:]}
-
-
 taggedText=bi_tag.tag(tagged_words)
 
 labeled_names = ([word, tag] for word, tag in taggedText)
-
-#import random
-#random.shuffle(labeled_names)
 
 featuresets = [(word_features(n), tag) for (n, tag) in labeled_names]
 

@@ -1,0 +1,23 @@
+Un ordenador está formado físicamente por numerosos circuitos integrados y muchos componentes de apoyo, extensión y accesorios, que en conjunto pueden ejecutar tareas diversas con suma rapidez y bajo el control de un programa (software).
+
+Este lenguaje está compuesto por un conjunto de instrucciones que determinan acciones a ser tomadas por la máquina. Un programa consiste en una cadena de estas instrucciones más un conjunto de datos sobre el cual se trabaja.
+
+Es el encargado de ejecutar los programas, desde el sistema operativo hasta las aplicaciones de usuario; sólo ejecuta instrucciones programadas en lenguaje de bajo nivel, realizando operaciones aritméticas y lógicas simples, tales como sumar, restar, multiplicar, dividir, las lógicas binarias y accesos a memoria.
+
+Los CI se hicieron posibles gracias a descubrimientos experimentales que mostraban que artefactos semiconductores podían realizar las funciones de los tubos de vacío.
+
+Los sistemas informáticos pasan por diferentes fases en su ciclo de vida, desde la captura de requisitos hasta el mantenimiento. En la actualidad se emplean numerosos sistemas informáticos en la administración pública, por ejemplo, las operadoras de la policía, el servicio al cliente, entre otras.
+
+La historia del hardware de computador se puede clasificar en cuatro generaciones, cada una caracterizada por un cambio tecnológico de importancia. Una primera delimitación podría hacerse entre hardware principal, como el estrictamente necesario para el funcionamiento normal del equipo, y el "complementario", como el que realiza funciones específicas.
+
+Los componentes lógicos incluyen, entre muchos otros, las aplicaciones informáticas, tales como el procesador de texto, que permite al usuario realizar todas las tareas concernientes a la edición de textos; el llamado software de sistema, tal como el sistema operativo, que básicamente permite al resto de los programas funcionar adecuadamente, facilitando también la interacción entre los componentes físicos y el resto de las aplicaciones, y proporcionando una interfaz con el usuario.
+
+Un ordenador puede tener más de una CPU; esto se llama multiprocesamiento. Todas las CPU modernas son microprocesadores, lo que significa que contienen un solo circuito integrado (chip). 
+
+Algunos circuitos integrados pueden contener varias CPU en un solo chip; estos son denominados procesadores multinúcleo.
+
+El programa BIOS de una computadora es un firmware cuyo propósito es activar una máquina desde su encendido y preparar el entorno para cargar un sistema operativo en la memoria RAM y disco duro.
+
+Generalmente, el código fuente lo escriben profesionales conocidos como programadores de computadora. Este código se escribe en un lenguaje de programación que sigue uno de los siguientes dos paradigmas: imperativo o declarativo, y que posteriormente puede ser convertido en un archivo ejecutable (usualmente llamado un programa ejecutable o un binario) por un compilador y más tarde ejecutado por una unidad central de procesamiento. Por otra parte, los programas de computadora se pueden ejecutar con la ayuda de un intérprete, o pueden ser empotrados directamente en hardware.
+
+El código fuente de un programa está escrito por un programador en algún lenguaje de programación, pero en este primer estado no es directamente ejecutable por la computadora, sino que debe ser traducido a otro lenguaje o código binario.

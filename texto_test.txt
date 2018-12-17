@@ -1,0 +1,9 @@
+En informática, una aplicación es un programa informático diseñado como herramienta para permitir a un usuario realizar uno o diversos tipos de tareas. Esto lo diferencia principalmente de otros tipos de programas, como los sistemas operativos que hacen funcionar la computadora, las utilidades que realizan tareas de mantenimiento o de uso general, y las herramientas de desarrollo de software para crear programas informáticos. Las aplicaciones pertenecen al software de aplicación.
+
+Una herramienta de desarrollo de software es un programa informático que usa un programador para crear, depurar, gestionar o mantener un programa. 
+
+La depuración de programas es el proceso de identificar y corregir errores de programación. En inglés se conoce como debugging, porque se asemeja a la eliminación de bichos o bugs, manera en que se conoce informalmente a los errores de programación. 
+
+Un error de software, error o simplemente fallo, también conocido por el inglés bug, es un problema en un programa de computador o sistema de software que desencadena un resultado indeseado. Los programas que ayudan a la detección y eliminación de errores de programación de software son denominados depuradores.
+
+ 
